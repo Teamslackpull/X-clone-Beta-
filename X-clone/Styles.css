@@ -1,0 +1,179 @@
+
+html, body {
+    user-select: none;
+    color: black;
+    font-family:Outfit;
+}
+
+/* typography and icons */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Outfit;
+    box-sizing: border-box;
+}
+
+
+i{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: #a1a1a1;
+}
+
+.liked{
+    color: red;
+}
+
+.retweeted {
+    color: limegreen;
+}
+
+/* layout */
+
+
+main, header{
+    margin: 0 auto;
+    flex-shrink: 0;
+    max-width: 100vh;
+}
+
+
+.HeaderImg{
+    padding-top: 20px;
+    width: 20px;
+}
+header{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.tweet-input-area {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* textareas + btn */
+
+::placeholder{
+    font-family:Outfit,SansSerif;
+}
+textarea {
+    margin: 10px 0 ;
+    background: transparent;
+    border: none;
+    resize: none;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.tweet-btn{
+   text-align: center;
+}
+
+button{
+    margin: 10px 0;
+    box-shadow: 2px 2px 2px #7e6e6e;
+    background-color: #1DA1F2;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    width: 280px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+button:active{
+    transform:translateY(1px);
+}
+
+/* tweet */
+
+.tweet{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0;
+    width: 280px;
+   }
+
+.tweet{
+    margin: 0 auto;
+
+}
+
+.tweet-inner{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tweet-details{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.tweet-detail{
+    display: flex;
+    gap: 4px;
+}
+
+.tweet-reply{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0;
+    margin: 10px 0 10px 40px;
+    width: 80%;
+}
+
+.handle{
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 0;
+}
+.Top-Items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.MenuOptions{
+    font-family: Outfit;
+    border: none;
+}
+.tweet-text{
+    padding: 5px;
+    width: 207px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* images */
+
+.profile-pic{
+    border: 1px solid lightgray;
+    width: 48px;
+}
+.profile-pic-User , .profile-pic{
+    box-shadow: 1px 2px  grey;
+    border-radius: 50%;
+}
+
+.profile-pic-User{
+    margin: 10px 0 ;
+    width: 48px;
+}
+
+/* utility */
+.hidden{
+    display: none;
+}
